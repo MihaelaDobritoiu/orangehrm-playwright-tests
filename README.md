@@ -156,3 +156,15 @@ This modular design ensures high reusability, maintainability, and readability o
 
 Mihaela Dobrițoiu
 🎯 QA Automation Engineer | Playwright | JavaScript | Manual & Automated Testing
+
+🌐 [Open Repository on GitHub](https://github.com/MihaelaDobritoiu)
+
+### 📚 References
+[Playwright Official Docs](https://playwright.dev/)
+
+[OrangeHRM Local Host](http://localhost/orangehrm/web/index.php/)
+
+[Node.js Downloads](https://nodejs.org/en)
+
+[GitHub Guides](https://docs.github.com/en)
+
