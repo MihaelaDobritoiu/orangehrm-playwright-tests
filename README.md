@@ -87,84 +87,157 @@ npx playwright test --ui
 ```
 npx playwright show-report
 ```
-### 🧪 Test Cases Overview
-### 🔐 Login Module
-| Test Case ID | Description                             |
-| ------------ | --------------------------------------- |
-| **TC01**     | Employee login with valid credentials   |
-| **TC02**     | Employee login with invalid password    |
-| **TC03**     | Verify error message for blank password |
-| **TC04**     | Manager login with valid credentials    |
+## 🧪 **Test Coverage by User Stories**
 
-### 👩‍💼 Admin Module
-| Test Case ID | Description             |
-| ------------ | ----------------------- |
-| **TC01**     | Admin adds a new user   |
-| **TC02**     | Admin edits user status |
-| **TC03**     | Admin deletes a user    |
+Each module is structured around **User Stories**, ensuring clear traceability between business requirements and automated test coverage.
 
-### 🌴 Leave Module
-| Test Case ID | Description                     |
-| ------------ | ------------------------------- |
-| **TC01**     | Employee applies for sick leave |
-| **TC02**     | Leave request without balance   |
-| **TC03**     | Manager approves leave          |
-| **TC04**     | Manager rejects leave           |
+---
 
-### 🧰 Maintenance Module
-| Test Case ID | Description                             |
-| ------------ | --------------------------------------- |
-| **TC01**     | Manager signs in to Maintenance section |
-| **TC02**     | Manager downloads employee records      |
+### 🔐 **Login Module**
 
-### 💬 Buzz Module
-| Test Case ID | Description                   |
-| ------------ | ----------------------------- |
-| **TC01**     | Employee creates a post       |
-| **TC02**     | Employee likes a post         |
-| **TC03**     | Employee edits a post         |
-| **TC04**     | Manager deletes employee post |
+**User Story 1:**  
+_As an employee, I want to login_
 
-### ⏱ Timesheet Module
-| Test Case ID | Description                              |
-| ------------ | ---------------------------------------- |
-| **TC01**     | Employee logs hours                      |
-| **TC02**     | Employee edits timesheet before approval |
-| **TC03**     | Employee cannot edit after approval      |
-| **TC04**     | Manager resets timesheet                 |
-| **TC05**     | Manager rejects timesheet                |
+- TC01 – Employee login with valid credentials  
+- TC02 – Employee login with invalid password  
+- TC03 – Verify error message for blank password  
 
-### 🧱 Page Object Model (POM)
+**User Story 2:**  
+_As a manager, I want to login_
 
-Each page file in /pages/ encapsulates:
+- TC01 – Manager login with valid credentials  
 
-🎯 Locators for UI elements
+---
 
-⚙️ Methods for performing actions (click, fill, select, submit)
+### 👩‍💼 **Admin Module**
 
-✅ Assertions for verifying expected outcomes
+**User Story:**  
+_As an admin, I want to manage users_
 
-This modular design ensures high reusability, maintainability, and readability of test scripts.
+- TC01 – Admin can successfully add a new user  
+- TC02 – Edit user status successfully  
+- TC03 – Delete user successfully  
 
-### 🔑 Test Data
-| Role     | Username    | Password         |
-| -------- | ----------- | ---------------- |
-| Admin    | `Admin`     | `Mihaeladobr26@` |
-| Employee | `johndoe`   | `Johndoe1234@`   |
+---
 
-### 👩‍💻 Author
+### 💬 **Buzz Module**
 
-Mihaela Dobrițoiu
-🎯 QA Automation Engineer | Playwright | JavaScript | Manual & Automated Testing
+**User Story 1:**  
+_Employee can access Buzz_
 
-🌐 [Open Repository on GitHub](https://github.com/MihaelaDobritoiu)
+- TC01 – Employee creates a post  
+- TC02 – Employee likes a post  
+- TC03 – Employee edits a post  
 
-### 📚 References
-[Playwright Official Docs](https://playwright.dev/)
+**User Story 2:**  
+_Manager can access Buzz_
 
-[OrangeHRM Local Host](http://localhost/orangehrm/web/index.php/)
+- TC01 – Manager deletes employee post  
 
-[Node.js Downloads](https://nodejs.org/en)
+---
 
+### 🌴 **Leave Module**
+
+**User Story 1:**  
+_Employee leave request_
+
+- TC01 – Employee applies for sick leave  
+- TC02 – Attempt leave request without balance  
+
+**User Story 2:**  
+_Manager leave request_
+
+- TC01 – Manager approves leave  
+- TC02 – Manager rejects leave  
+
+---
+
+### 🧰 **Maintenance Module**
+
+**User Story:**  
+_Manager secure access_
+
+- TC01 – Manager signs in with password  
+- TC02 – Verify records can be downloaded  
+
+---
+
+### ⏱ **Timesheet Module**
+
+**User Story 1:**  
+_Employee timesheet_
+
+- TC01 – Employee logs hours  
+- TC02 – Edit timesheet before approval  
+- TC03 – Attempt to edit after approval  
+
+**User Story 2:**  
+_Manager timesheet_
+
+- TC01 – Manager resets timesheet  
+- TC02 – Manager rejects timesheet  
+---
+
+## 📌 **Jira Test Management & Bug Tracking**
+
+This project includes structured **test management in Jira**, covering:
+
+- 📋 User Stories & backlog organization  
+- ✅ Detailed test cases linked to requirements  
+- 🐞 Bug tracking with full documentation  
+
+### 🗂️ Backlog Overview
+![Jira Backlog](./screenshots/jira-backlog.png)
+
+### 🧪 Test Case Example
+![Test Case](./screenshots/jira-testcase.png)
+
+### 🐞 Bug Report Example
+![Bug 1](./screenshots/jira-bug1.png)
+![Bug 2](./screenshots/jira-bug2.png)
+
+---
+
+## 🧱 **Page Object Model (POM)**
+
+Each file in `/pages/` encapsulates:
+
+- 🎯 Locators for UI elements  
+- ⚙️ Methods for user actions (click, fill, submit)  
+- ✅ Assertions for validation  
+
+This design ensures:
+
+- High reusability  
+- Maintainability  
+- Clean and readable test scripts  
+
+---
+
+## 🔑 **Test Data**
+
+| Role     | Username   | Password         |
+|----------|------------|------------------|
+| Admin    | `Admin`    | `Mihaeladobr26@` |
+| Employee | `johndoe`  | `Johndoe1234@`   |
+
+---
+
+## 👩‍💻 **Author**
+
+**Mihaela Dobrițoiu**  
+QA Automation Engineer  
+Playwright · JavaScript · Manual & Automated Testing  
+
+🌐 https://github.com/MihaelaDobritoiu  
+
+---
+
+## 📚 **References**
+
+- https://playwright.dev/  
+- http://localhost/orangehrm/web/index.php/  
+- https://nodejs.org/en  
+- https://docs.github.com/en  
 [GitHub Guides](https://docs.github.com/en)
 
