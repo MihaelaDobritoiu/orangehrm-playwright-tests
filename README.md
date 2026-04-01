@@ -15,17 +15,17 @@ It validates the key OrangeHRM modules, including **Login**, **Admin**, **Leave*
 
 ## 🧾 **Project Overview**
 
-- **Application Under Test:** [OrangeHRM Demo](https://opensource-demo.orangehrmlive.com/)
-- **Automation Scope:**
-  - 🔐 **Login:** Valid, invalid, and blank password logins for Employee & Manager
-  - 👩‍💼 **Admin:** Create, edit, and delete user accounts
-  - 🌴 **Leave:** Apply for, approve, reject, and reset leave requests
-  - 🧰 **Maintenance:** Manager-only secure access and record download
-  - 💬 **Buzz:** Employees post, like, and edit posts; Manager deletes posts
-  - ⏱ **Timesheet:** Employee log/edit hours; Manager approve/reject/reset timesheets
+- **Application Under Test:**  
+  https://opensource-demo.orangehrmlive.com/
+
 - **Test Approach:** Page Object Model (POM)
-- **Test Management:** Jira (for manual test tracking)
-- **Tools:** Playwright · Node.js · Visual Studio Code · GitHub
+
+- **Test Management:** Jira (User Stories, Test Cases, Bug Tracking)
+
+- **Tools:**  
+  Playwright · Node.js · Visual Studio Code · GitHub
+
+---
 
 ## 🗂️ **Project Structure**
 ```
