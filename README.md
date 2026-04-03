@@ -13,85 +13,33 @@ It validates the key OrangeHRM modules, including **Login**, **Admin**, **Leave*
 
 ---
 
-## 🧾 **Project Overview**
+## 📋 **Project Overview**
 
-- **Application Under Test:**  
-  https://opensource-demo.orangehrmlive.com/
+- **Application Under Test:** OrangeHRM Demo  
 
-- **Test Approach:** Page Object Model (POM)
+- **Automation Scope:**
+  - 🔐 **Login:** Valid, invalid, and blank password scenarios for Employee & Manager  
+  - 👩‍💼 **Admin:** Create, edit, and delete user accounts  
+  - 🌴 **Leave:** Apply for leave, approval and rejection flows  
+  - 🧰 **Maintenance:** Secure manager access and employee records download  
+  - 💬 **Buzz:** Employee posts, likes, and edits; Manager deletes posts  
+  - ⏱ **Timesheet:** Employee logs and edits hours; Manager approves, rejects, and resets timesheets  
 
-- **Test Management:** Jira (User Stories, Test Cases, Bug Tracking)
+- **Test Approach:** Page Object Model (POM) for reusable and maintainable test scripts  
 
-- **Tools:**  
-  Playwright · Node.js · Visual Studio Code · GitHub
+- **Test Management:** Jira for user stories, test case management, and bug tracking
 
----
+  ## 🧰 **Tools & Technologies**
 
-## 🗂️ **Project Structure**
-```
-├── pages/
-│ ├── admin.js
-│ ├── loginpage.js
-│ ├── leave.js
-│ ├── maintenance.js
-│ ├── buzz.js
-│ └── timesheet.js
-├── tests/
-│ ├── admin.spec.js
-│ ├── login.spec.js
-│ ├── leave.spec.js
-│ ├── maintenance.spec.js
-│ ├── buzz.spec.js
-│ └── timesheet.spec.js
-├── playwright.config.js
-├── package.json
-└── README.md
-```
+| Category              | Tool / Library              |
+|----------------------|----------------------------|
+| Automation Framework | Playwright                 |
+| Language             | JavaScript                 |
+| Test Runner          | Playwright Test            |
+| Reporting            | Playwright HTML Reports    |
+| Test Design Pattern  | Page Object Model (POM)    |
+| Test Management      | Jira                       |
 
----
-
-## ⚙️ **Installation & Setup**
-
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/MihaelaDobritoiu/orangehrm-playwright-tests.git
-cd orangehrm-playwright-tests
-```
-
-### 2️⃣ Install dependencies
-```
-npm install
-```
-
-### 3️⃣ Install browsers
-```
-npx playwright install
-```
-### 🚀 Running Tests
-▶ Run all tests
-```
-npx playwright test
-```
-
-### 🧩 Run a specific test file
-```
-npx playwright test tests/login.spec.js
-```
-
-### 🧠 Run tests in UI mode
-```
-npx playwright test --ui
-```
-
-### 📊 View HTML Report
-```
-npx playwright show-report
-```
-## 🧪 **Test Coverage by User Stories**
-
-Each module is structured around **User Stories**, ensuring clear traceability between business requirements and automated test coverage.
-
----
 
 ### 🔐 **Login Module**
 
@@ -187,14 +135,21 @@ This project includes structured **test management in Jira**, covering:
 - 🐞 Bug tracking with full documentation  
 
 ### 🗂️ Backlog Overview
-![Jira Backlog](./screenshots/jira-backlog.png)
+📷 Screenshot from Jira showing the structure:
+<img width="1915" height="866" alt="jira-backlog" src="https://github.com/user-attachments/assets/479b6ed2-d8bc-429b-b652-1b88d20041fe" />
+
 
 ### 🧪 Test Case Example
-![Test Case](./screenshots/jira-testcase.png)
+📷 Screenshot from Jira showing a test case:
+<img width="1911" height="875" alt="jira-testcase" src="https://github.com/user-attachments/assets/c885e337-81d9-4b5e-8e1f-af7c2329050e" />
+
 
 ### 🐞 Bug Report Example
-![Bug 1](./screenshots/jira-bug1.png)
-![Bug 2](./screenshots/jira-bug2.png)
+📷 Here is an example of a documented bug:
+<img width="1910" height="874" alt="jira-bug1" src="https://github.com/user-attachments/assets/16ae5a52-1188-406a-a0cc-40731a9ae267" />
+
+<img width="1917" height="874" alt="jira-bug2" src="https://github.com/user-attachments/assets/0d98085e-6473-4421-8492-e00b0273cc99" />
+
 
 ---
 
@@ -213,7 +168,71 @@ This design ensures:
 - Clean and readable test scripts  
 
 ---
+## 🗂️ **Project Structure**
+```
+├── pages/
+│ ├── admin.js
+│ ├── loginpage.js
+│ ├── leave.js
+│ ├── maintenance.js
+│ ├── buzz.js
+│ └── timesheet.js
+├── tests/
+│ ├── admin.spec.js
+│ ├── login.spec.js
+│ ├── leave.spec.js
+│ ├── maintenance.spec.js
+│ ├── buzz.spec.js
+│ └── timesheet.spec.js
+├── playwright.config.js
+├── package.json
+└── README.md
+```
 
+---
+
+## ⚙️ **Installation & Setup**
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/MihaelaDobritoiu/orangehrm-playwright-tests.git
+cd orangehrm-playwright-tests
+```
+
+### 2️⃣ Install dependencies
+```
+npm install
+```
+
+### 3️⃣ Install browsers
+```
+npx playwright install
+```
+### 🚀 Running Tests
+▶ Run all tests
+```
+npx playwright test
+```
+
+### 🧩 Run a specific test file
+```
+npx playwright test tests/login.spec.js
+```
+
+### 🧠 Run tests in UI mode
+```
+npx playwright test --ui
+```
+
+### 📊 View HTML Report
+```
+npx playwright show-report
+```
+## 🧪 **Test Coverage by User Stories**
+
+Each module is structured around **User Stories**, ensuring clear traceability between business requirements and automated test coverage.
+
+---
 ## 🔑 **Test Data**
 
 | Role     | Username   | Password         |
