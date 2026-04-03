@@ -230,9 +230,6 @@ npx playwright test --ui
 ```
 npx playwright show-report
 ```
-## 🧪 **Test Coverage by User Stories**
-
-Each module is structured around **User Stories**, ensuring clear traceability between business requirements and automated test coverage.
 
 ---
 ## 🔑 **Test Data**
