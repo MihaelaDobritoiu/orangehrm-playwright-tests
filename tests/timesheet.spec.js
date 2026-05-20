@@ -34,8 +34,9 @@ test.describe('Timesheet - US01 - Employee Timesheet', () => {
         await timesheet.time_button.click()
         await expect(timesheet.edit_timesheet_button).toHaveCount(0)
     })
+})
 
-    test.describe('Timesheet - US02 - Manager timesheet', () => {
+    test.describe('Timesheet - US02 - Manager Timesheet', () => {
 
         test('Timesheet - TC01 - Manager can reset timesheet', async ({ page }) => {
             await login.ManagerSignIn()
@@ -47,4 +48,3 @@ test.describe('Timesheet - US01 - Employee Timesheet', () => {
             await timesheet.ManagerRejectTimesheet()
         })
     })
-})
